@@ -1,0 +1,22 @@
+{
+  "name": "garrickb.github.io",
+  "version": "0.0.1",
+  "description": "Garrick Buckley's personal website.",
+  "author": "Garrick Buckley <gbuckle@purdue.edu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garrickb/garrickb.github.io.git"
+  },
+  "dependencies": {
+    "gulp-ruby-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-jshint": "*",
+    "gulp-uglify": "*",
+    "gulp-livereload": "*",
+    "gulp-concat": "*",
+    "gulp-rename": "*",
+    "del": "*"
+  },
+  "private": true
+}

@@ -1,5 +1,9 @@
+@import "lib/flexboxgrid";
+@import "lib/normalize";
+@import "lib/skeleton";
+
 body {
-  background-color: #F2F2F2;
+  background-color: #F4F4F4;
 
   // Custom highlight color
   ::selection {
@@ -11,6 +15,7 @@ body {
 }
 
 #title {
+  width: 100%;
   margin-top: 15px;
   text-align: center;
   h1 {
@@ -35,65 +40,61 @@ hr {
 }
 
 .project {
-  margin-bottom: 15px;
-
-  &:first-of-type {
-    margin-top: 10px;
-  }
-
   div {
-    border-radius: 0.25em;
+    margin-bottom: 20px;
 
-    text-align: center;
-    background-color: #FAFAFA;
+    div {
+      margin-left: 10px;
+      margin-right: 10px;
 
-    p {
-      // Make text un-selectable
-      -webkit-user-select: none; /* Chrome/Safari */
-      -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* IE10+ */
+      border-radius: 0.35em;
 
-      font-weight: 700;
-      padding: 2px 0px 0px 0px;
-      margin: 0px;
-    }
+      text-align: center;
+      background-color: #FBFBFB;
 
-    .image {
-      height: 150px;
-
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-
-      &#sc {
-          background-image: url(../img/sc.png);
+      p {
+        font-weight: 700;
+        padding: 2px 0px 0px 0px;
+        margin: 0px;
       }
 
-      &#pugg {
-          background-image: url(../img/pugg.png);
-      }
-
-      &#ips {
-          background-image: url(../img/ips.png);
-      }
-
-      &#ludum {
-          background-image: url(../img/ludum.png);
-      }
-
-      &#keyboard {
-          background-image: url(../img/keyboard.png);
-      }
-
-      &#kitchensupport {
-          background-image: url(../img/unknown.png);
-      }
-    }
-
-    &:hover {
-      background-color: #E0E0E0;
       .image {
-          background-color: #E0E0E0;
+        height: 150px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        &#sc {
+            background-image: url(../img/sc.png);
+        }
+
+        &#pugg {
+            background-image: url(../img/pugg.png);
+        }
+
+        &#ips {
+            background-image: url(../img/ips.png);
+        }
+
+        &#ludum {
+            background-image: url(../img/ludum.png);
+        }
+
+        &#keyboard {
+            background-image: url(../img/keyboard.png);
+        }
+
+        &#kitchensupport {
+            background-image: url(../img/unknown.png);
+        }
+      }
+
+      &:hover {
+        background-color: #E9E9E9;
+        .image {
+            background-color: #E9E9E9;
+        }
       }
     }
   }

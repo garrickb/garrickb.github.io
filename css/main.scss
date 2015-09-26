@@ -1,3 +1,15 @@
+body {
+  background-color: #F2F2F2;
+
+  // Custom highlight color
+  ::selection {
+    background: #C0C0C0;
+  }
+  ::-moz-selection {
+      background: #C0C0C0;
+  }
+}
+
 #title {
   margin-top: 15px;
   text-align: center;
@@ -11,4 +23,66 @@
 
 hr {
   margin: 15px;
+}
+
+#main-content {
+
+}
+
+#footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 15px;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+
+  div {
+    border-radius: 0.25em;
+
+    text-align: center;
+    background-color: #FAFAFA;
+
+    p {
+      // Make text un-selectable
+      -webkit-user-select: none; /* Chrome/Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+
+      font-weight: 700;
+      padding: 2px 0px 0px 0px;
+      margin: 0px;
+    }
+
+    .image {
+      height: 150px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      &#sc {
+          background-image: url(../img/sc-sm.png);
+      }
+
+      &#pugg {
+          background-image: url(../img/pugg-sm.png);
+      }
+
+      &#ips {
+          background-image: url(../img/ips-sm.png);
+      }
+    }
+
+    &:hover {
+      background-color: #E0E0E0;
+      .image {
+          background-color: #E0E0E0;
+      }
+    }
+  }
 }

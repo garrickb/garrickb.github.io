@@ -20,7 +20,13 @@
       <hr>
       <div id="main-content">
         <h4>A little bit about me</h4>
-        <p>Hey there! My name's Garrick, I'm currently a junior at Purdue University studying computer science and specializing in <em>software engineering</em> and <em>security</em>.</p>
+        <p>Hey there. My name's Garrick, I'm currently a junior at Purdue University studying computer science and specializing in <em>software engineering</em> and <em>security</em>.</p>
+
+        <div id="resume-button">
+          <a class="button" href="resume/Resume_Garrick-Buckley.pdf" target="_blank">Resume</a>
+          <a class="button" href="https://github.com/garrickb" target="_blank">Github</a>
+          <a class="button" href="https://www.linkedin.com/in/garrickb" target="_blank">Linkedin</a>
+        </div>
 
         <h4>Some of my projects</h4>
         <div class="project row">
@@ -67,11 +73,26 @@
         </div>
 
         <h4>Contact me</h4>
-        <p>Email: gbuckle@purdue.edu</p>
+        <form id="contact-form" method="POST" action="////formspree.io/gbuckle@purdue.edu">
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" value="garrickb.io message" />
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <label for="name">Name</label>
+              <input type="text" name="name">
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <label for="_replyto">Email Address</label>
+              <input type="email" name="_replyto">
+            </div>
+            <div class="col-md-12">
+              <label for="message">Message</label>
+              <textarea name="message"></textarea>
+            </div>
+            <div id="submit-button"><input type="submit" value="Send Message"></div>
+          </div>
+        </form>
       </div>
-  </div>
-  <div id="footer" class="u-full-width">
-    <p>This is the footer.</p>
   </div>
 </body>
 </html>

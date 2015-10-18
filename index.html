@@ -7,8 +7,8 @@
   <meta name="author" content="Garrick Buckley">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
@@ -30,6 +30,12 @@
 
         <h4>Some of my projects</h4>
         <div class="project row">
+          <div class="col-xs-12 col-md-6 col-lg-4">
+            <div>
+              <p>IN PROGRESS: Kitchen.Support</p>
+              <div id="kitchensupport" class="image"></div>
+            </div>
+          </div>
           <div class="col-xs-12 col-md-6 col-lg-4">
             <div>
               <p>PUGG Website</p>
@@ -63,13 +69,6 @@
               <div id="ludum" class="image"></div>
             </div>
           </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-4">
-            <div>
-              <p>IN PROGRESS: Kitchen.Support</p>
-              <div id="kitchensupport" class="image"></div>
-            </div>
-          </div>
         </div>
 
         <h4>Contact me</h4>
@@ -94,5 +93,195 @@
         </form>
       </div>
   </div>
+
+  <div style="display: none;" id="modal"></div>
+
+  <div style="display: none;" id="modalContainer">
+    <a class="modalClose" onclick="closeModal()">Close</a>
+    <div id="pugg-modal">
+      <h3 class="modalTitle">PUGG Website</h3>
+      <p>
+        I soley developed and maintain the current website for the Purdue University Gamer's group. Originally when I joined the group my freshman year, I knew the basics of web programming and knew that I wanted to recreate the website. I developed everything from the content management system for users and the news posts, to the entire design of the website.
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>
+            <strong>Live Version: </strong> <a target="_blank" href="http://PUGG.org">pugg.org</a>
+          </li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>Back-End
+            <ul>
+              <li>PHP</li>
+              <li>Laravel Framework</li>
+            </ul>
+          </li>
+          <li>Front-End
+            <ul>
+              <li>Javascript
+                <ul><li>jQuery library</li></ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="sc-modal">
+      <h4 class="modalTitle">Soundcloud Radio</h4>
+      <p>
+        This web application acts as an online radio station where users can visit the website and listen to the same song with everyone as the same exact time. The users can chat with each other anonymously, add songs to the play queue, and vote to skip the currently playing song.
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/garrickb/MusicApp">Github (README contains pictures)</a>
+          </li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>Back-End
+            <ul>
+              <li>Node.js
+                <ul>
+                  <li>Express framework</li>
+                  <li>Socket.IO</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Front-End
+            <ul>
+              <li>Javascript</li>
+              <li>SASS</li>
+              <li>Jade</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="ips-modal">
+      <h4 class="modalTitle">IPS Hackathon</h4>
+      <p>
+        This application was developed for the Indy Civic Hackathon, where Indiana opened up datasets and challenges to the public and hosted a hackathon. My team took on the task of the Indiana Public Schools challenge, specifically the Mobile Tracking problem. We solved the issue of tracking the milage of IPS drivers using and Android application, and displayed that information on an online web administration panel.
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li><a target="_blank" href="https://github.com/garrickb/CivicHackMobile">Github Repo</a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=l1mAqXvVd94">Video Demo</a></li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>Back-End
+            <ul>
+              <li>Node.js</li>
+              <li>Socket.IO</li>
+              <li>MongoDB</li>
+              <li>ES6</li>
+            </ul>
+          </li>
+          <li>Front-End
+            <ul>
+              <li>AngularJS</li>
+              <li>Android Application</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="keyboard-modal">
+      <h3 class="modalTitle">Typing Game</h3>
+      <p>
+        This web game was created just for fun. It's unfinished and very raw, but it still conveys the basic game play mechanic that I imagined. It's a typing RPG game. I wanted it to be a dungeon crawler that allowed the player to explore a dungeon, level up, gather loot, and upgrade their equipment. The only way to kill enemies is to type the word assigned to them.
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li><a target="_blank" href="https://github.com/garrickb/TypingGame">Github Repo</a></li>
+          <li><a target="_blank" href="http://garrickb.io/TypingGame">Live Demo</a></li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>Javascript
+            <ul>
+            <li>jQuery library</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="ludum-modal">
+      <h4 class="modalTitle">Ludum Dare 28</h4>
+      <p>
+        This web game was developed in 48 hours for the Ludum Dare 28 online competition. People around the world participated in the game development competition that centered around one given theme. The theme was 'You Only Get One'. My game follows a dog as he runs from pet store to pet store getting the free treats that they are giving out, and after all, the dog only gets one per store.
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li><a target="_blank" href="https://github.com/garrickb/ludumdare28">Github Repo</a></li>
+          <li><a target="_blank" href="http://garrickb.io/ludumdare28/">Live Demo</a></li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>Javascript
+            <ul>
+            <li>jQuery library</li>
+            <li>Canvas Query library</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="kitchensupport-modal">
+      <h4 class="modalTitle">Kitchen Support</h4>
+      <p>
+        Kitchen Support is a web and mobile application that allows users to better utilize the ingredients they have in their kitchen. During the development of this project we attempted to follow as many industry standards as we could. We have code reviews for every pull request,  good coding standards and commenting , Jira for product management, and CircleCI for continuous interation. I am serving as the scum master for the team as we follow the agile scrum process of software engineering. Our team consists of four people on the mobile side, and two on the web/api side (which is where I am working).
+      </p>
+      <h5>Information</h5>
+      <div class="modalInfo">
+        <ul>
+          <li><a target="_blank" href="https://github.com/kitchensupport/api">API Github Repo</a></li>
+          <li><a target="_blank" href="https://github.com/kitchensupport/webapp">Web App Github Repo</a></li>
+          <li><a target="_blank" href="https://github.com/kitchensupport/mobileapp">Mobile Repo</a></li>
+          <li><a target="_blank" href="http://kitchen.support">Live Demo</a></li>
+        </ul>
+      </div>
+      <h5>Technologies Used</h5>
+      <div class="modalInfo">
+        <ul>
+          <li>API- Node.js
+            <ul>
+              <li>ES6</li>
+              <li>Express</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </li>
+          <li>Web Application - AngularJS
+            <ul>
+              <li>ES6</li>
+              <li>Angular Material</li>
+              <li>SASS</li>
+            </ul>
+          </li>
+          <li>Mobile Application - Xamarin</li>
+        </ul>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="dist/js/main.min.js"></script>
 </body>
 </html>

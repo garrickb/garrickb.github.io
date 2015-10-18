@@ -1,0 +1,190 @@
+@import "lib/flexboxgrid";
+@import "lib/normalize";
+@import "lib/skeleton";
+
+body {
+  background-color: #F4F4F4;
+
+  // Custom highlight color
+  ::selection {
+    background: #C0C0C0;
+  }
+  ::-moz-selection {
+      background: #C0C0C0;
+  }
+}
+
+#title {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+  h1 {
+    margin-bottom: 5px;
+  }
+  h6 {
+    margin-bottom: 5px;
+  }
+}
+
+hr {
+  margin: 15px;
+}
+
+#resume-button {
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 10px;
+
+  >div {
+    margin-bottom: 15px;
+
+    div {
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      border-radius: 0.35em;
+
+      text-align: center;
+      background-color: #FBFBFB;
+
+      p {
+        font-weight: 700;
+        padding: 2px 0px 0px 0px;
+        margin: 0px;
+      }
+
+      .image {
+        height: 150px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        &#sc {
+            background-image: url(../img/sc.png);
+        }
+
+        &#pugg {
+            background-image: url(../img/pugg.png);
+        }
+
+        &#ips {
+            background-image: url(../img/ips.png);
+        }
+
+        &#ludum {
+            background-image: url(../img/ludum.png);
+        }
+
+        &#keyboard {
+            background-image: url(../img/keyboard.png);
+        }
+
+        &#kitchensupport {
+            background-image: url(../img/unknown.png);
+        }
+      }
+
+      &:hover {
+        background-color: #E9E9E9;
+        .image {
+            background-color: #E9E9E9;
+        }
+      }
+    }
+  }
+}
+
+#contact-form {
+  width: 100%;
+  div>div>label {
+    font-weight: 100;
+  }
+  div>div>input {
+    width: 100%;
+  }
+  div>div>textarea {
+    width: 100%;
+    height: 120px;
+  }
+}
+
+#submit-button {
+  width: 100%;
+  text-align: center;
+}
+
+#modal {
+  position: fixed;
+	top: 0;
+	left: 0;
+  height: 100%;
+  width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 10;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+
+  opacity: 0;
+}
+
+#modalContainer {
+  overflow-y: auto;
+  height: auto;
+  max-height: 75%;
+
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+ 	z-index: 15;
+
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+
+   transform: translate(-50%, -50%);
+
+   margin-top: 5%;
+   margin-bottom: 5%;
+
+   min-width: 300px;
+   max-width: 95%;
+   max-height: 100%;
+
+   background-color: white;
+   opacity: 0;
+
+   .modalClose {
+     z-index: 0;
+     top: 10px;
+     right: 20px;
+     position: fixed;
+     cursor: pointer;
+   }
+
+   .modalTitle {
+     padding-top: 30px;
+     text-align: center;
+   }
+
+   .modalInfo {
+     padding-left: 25px;
+   }
+
+   h5 {
+     margin-top: 10px;
+     margin-bottom: 5px;
+   }
+
+   ul,li {
+     margin-top: 0px;
+     margin-bottom: 5px;
+   }
+  }

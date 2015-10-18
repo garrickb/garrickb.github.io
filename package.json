@@ -8,12 +8,11 @@
     "url": "https://github.com/garrickb/garrickb.github.io.git"
   },
   "dependencies": {
-    "gulp-ruby-sass": "*",
+    "gulp-sass": "*",
     "gulp-autoprefixer": "*",
     "gulp-minify-css": "*",
     "gulp-jshint": "*",
     "gulp-uglify": "*",
-    "gulp-livereload": "*",
     "gulp-concat": "*",
     "gulp-rename": "*",
     "del": "*"
